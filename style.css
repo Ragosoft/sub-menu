@@ -90,6 +90,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .sub-menu__link{
 	color: #000;
 }
+.sub-menu__link a{
+	margin: 0;
+	padding: 0;
+}
 
 .arrow{
 	display: none;
