@@ -67,9 +67,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .menu__list>li{
 	margin: 0px 20px 0px 0px;
 }
-.menu__list>li:hover .sub-menu__list{
-	display: block;
-}
 .menu__link{
 	color: #fff;
 }
@@ -89,10 +86,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .sub-menu__link{
 	color: #000;
-}
-.sub-menu__link a{
-	margin: 0;
-	padding: 0;
 }
 
 .arrow{
@@ -117,4 +110,21 @@ body.touch .sub-menu__list.open{
 }
 body.touch .arrow{
 	display: block;
+}
+
+@media (max-width:767px){
+	.wrapper{
+		padding: 15px;
+	}
+	.menu__list{
+		display: block;
+	}
+	.menu__list>li{
+		margin: 0px 0px 10px 0px;
+	}
+	.sub-menu__list{
+		position: relative;
+		left: 0;
+		top: 0;
+	}
 }
